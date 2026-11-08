@@ -36,7 +36,7 @@ var CONFIG = {
     'tu forma de hablar cuando te emocionas con algo, se te sube la voz y todo',
     'lo bonita que te pones cuando ni te lo crees que estás bonita',
     'que conmigo eres completamente tú, sin filtros y sin pose ❤',
-    'que me digas "luu" como si fuera un secreto entre nosotros 💕'
+    'que te llame luu como si fuera un secreto entre nosotros 💕'
   ],
 
   /* Titulos cortos para las fotos, por nombre de archivo. */
