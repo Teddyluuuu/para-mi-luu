@@ -1,0 +1,4 @@
+Suelta aqui mas fotos.
+Nombres: foto2.jpg, foto3.jpg, foto4.png ... (sirve .jpg .jpeg .png .webp).
+La pagina las busca solas y las muestra en "nosotros", en orden.
+La foto1.jpg ya esta ocupada: es la favorita de mi luu.

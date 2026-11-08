@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Para Luz · mi luu ♥</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css?v=9" />
+</head>
+<body>
+
+<!-- ================= CANDADO ================= -->
+<div id="candado" class="candado">
+  <div class="candado-caja">
+    <div class="candado-corazon" aria-hidden="true">
+      <svg viewBox="0 0 100 90" width="88" height="80"><path d="M50 86 C20 62 4 46 4 27 A22 22 0 0 1 50 16 A22 22 0 0 1 96 27 C96 46 80 62 50 86 Z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="34" r="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M50 40 v10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+    </div>
+    <p class="kicker">para la dueña de mi cozaron 💗</p>
+    <h1 class="titulo-vibes">Hay una clave<br>que sólo tú sabes</h1>
+    <p class="nota">6 numeritos, mi amor. Nada más. Ábrelo y te espera un montón de cozarones ❤ 💕</p>
+
+    <form id="form-clave" autocomplete="off">
+      <input id="clave" class="clave" type="password" inputmode="numeric" maxlength="6" autocomplete="off" autofocus placeholder="••••••" aria-label="Clave" />
+      <button id="btn-abrir" class="btn-amor" type="submit">Abrir mi cozaron</button>
+    </form>
+
+    <p id="msg-clave" class="msg" role="status"></p>
+
+    <div class="pistas">
+      <span class="pista">Pista: fecha en la que nos conocimos juasjuas :D</span>
+      <span class="pista">solo numeros amor 💗</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SITIO ================= -->
+<div id="sitio" class="sitio oculto">
+
+  <div id="lluvia" class="lluvia" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="kicker">feliz cumpleaños, mi vida</p>
+    <h1 id="nombre-grande" class="nombre-grande" aria-label="Luz"></h1>
+    <p class="apodo">— <b>mi luu</b> —</p>
+    <div class="latido" aria-hidden="true"><span class="corazon-svg">♥</span></div>
+    <p class="hero-frase">hola mi amor juasjuas <b>te amiiiitooo</b> 💗💗</p>
+    <p id="contador" class="contador"></p>
+    <a class="btn-fantasma" href="#carta">baja, hay un montón de cosas para ti ❤</a>
+  </header>
+
+  <!-- CARTA -->
+  <section id="carta" class="seccion">
+    <h2 class="seccion-titulo">una cartita <span>sin filtro y sin forma</span></h2>
+    <div class="carta">
+      <p class="carta-saludo">Luu de mi cozaron:</p>
+      <p>Hoy es tu día, enana hermosa. Me puse a pensar qué regalarte, si ya me regalaste todo hace rato… y terminé haciendo esta pagecita tonta llena de cozarones, porque así soy, amor: cursi sin vergüenza y romántico a mi manera 💗</p>
+      <p>Cumples años tú, pero el regalo me lo saqué yo cuando te encontré. Y más todavía desde el 1 de septiembre de 2025, el día que me declaré y te dije todo lo que sentía (me puse rojo nomás, jsjsjs). Desde ahí todo se puso más lindo, más fácil, más nuestro.</p>
+      <p>Gracias por aguantarme, por reírte de mis chistes malos, por cuidarme cuando ni yo sé cuidarme, y hasta por tus celos, porque esas cositas también son tú y me encantan, sjsjsj ❤</p>
+      <p>Que cumplas muchos más, bajita, y que todos los próximos los pase a tu lado. De aquí ya no te suelto 💕</p>
+      <p class="carta-firma">tuyo, siempre · <b>enana luuu</b> 💗</p>
+    </div>
+  </section>
+
+  <!-- COSAS QUE AMO -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">cosas que amo de ti <span>y faltan un montón, obvio 💗</span></h2>
+    <ul id="amo" class="amo"></ul>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">nosotros <span>toca una foto para verla grande 💕</span></h2>
+    <div id="galeria" class="galeria"></div>
+    <p id="galeria-vacia" class="nota oculto">Todavía no cargamos fotos. Cuando las tengamos a mano, las subo y acá aparecen solas, amor.</p>
+  </section>
+
+  <!-- CANCIONES -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">nuestras canciones <span>la nuestra es la primera, obvio 💗</span></h2>
+    <div class="disco" id="disco">
+      <div class="vinilo" aria-hidden="true"><span>♥</span></div>
+      <div id="lector" class="lector">
+        <p class="nota">toca una canción de la lista y suena aquí mismo ❤</p>
+      </div>
+    </div>
+    <ul id="lista-canciones" class="lista-canciones"></ul>
+    <p id="aviso-canciones" class="nota oculto">Para escucharlas hace falta internet. Si una no se deja incrustar, tiene su botón para abrirla en YouTube.</p>
+  </section>
+
+  <!-- HISTORIA -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">nuestra historia <span>versión corta, la larga es todos los días</span></h2>
+    <ol id="historia" class="historia"></ol>
+  </section>
+
+  <!-- LA PREGUNTA -->
+  <section id="pregunta" class="seccion seccion-pregunta">
+    <h2 class="seccion-titulo">y esto… <span>que ya lo sabes, pero dilo 💍</span></h2>
+    <p class="pregunta-grande">¿serás mi esposa <b>Juasjuas</b>?</p>
+    <div class="botones-pregunta">
+      <button id="btn-si" class="btn-amor grande">SÍ, claro que sí 💗</button>
+      <button id="btn-no" class="btn-fantasma">dejame pensarlo un poquito</button>
+    </div>
+    <p id="respuesta" class="respuesta"></p>
+  </section>
+
+  <footer class="pie">
+    <p>hecho con amor, desvelo y algunos cozarones que se cayeron del cielo 💗</p>
+    <p class="pie-b">para <b>Luz</b>, o sea para <b>mi luu</b> ❤ feliz cumpleaños, mi amor 💕</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox oculto">
+    <img id="lightbox-img" alt="foto de nosotros" />
+    <p id="lightbox-cap" class="lightbox-cap"></p>
+  </div>
+
+</div>
+
+<script src="js/config.js?v=9"></script>
+<script src="js/app.js?v=9"></script>
+</body>
+</html>
