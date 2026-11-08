@@ -46,8 +46,9 @@ var CONFIG = {
 
   historia: [
     { cuando: 'el dia 01/09/25', que: 'me declaré. te dije todo lo que sentía y me puse rojo nomás, jsjsjs. ahí empezó oficialmente todo' },
-    { cuando: 'después de eso', que: 'las conversaciones se hicieron de madrugada y los "buenas noches" se volvieron lo mejor de mi día' },
+    { cuando: 'después de eso', que: 'todas las salidas que hicimos, los planes, y hasta el gatito que adoptamos juntos como si fuera nuestro hijo' },
     { cuando: 'un día cualquiera', que: 'me di cuenta de que ya no podía pasar un día sin contarte todo' },
+    { cuando: 'el dia 01/09/26', que: 'por fin cumplimos un año, sjsjsksj te amiiito' },
     { cuando: 'hoy', que: 'cumples años, mi luu, y yo celebro haberte encontrado 💗' },
     { cuando: 'mañana', que: 'nos casamos y seguimos celebrando el resto de la vida. serás mi esposa, juasjuas ❤' }
   ]

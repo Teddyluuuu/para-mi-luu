@@ -17,7 +17,7 @@
        Sin esto, un error en las fotos dejaba la pagina a medias. */
     [construirNombre, pintarCosasQueAmo, pintarHistoria, pintarContador,
       iniciarLluviaDeCorazones,
-      function () { estallarCorazones(34); },
+      function () { estallarCorazones(estallidoInicial); },
       cargarFotos,
       pintarCanciones
     ].forEach(function (hacer) {
@@ -57,11 +57,6 @@
   $('form-clave').addEventListener('submit', intentar);
   $('btn-abrir').addEventListener('click', intentar);
 
-  /* Arriba el boton en cuanto teclean, que no quede tapado por el teclado. */
-  $('clave').addEventListener('focus', function () {
-    window.setTimeout(function () { $('btn-abrir').scrollIntoView({ block: 'center' }); }, 300);
-  });
-
   /* La reapertura automatica se lanza al final del todo: si no, abria antes de
      que las variables de mas abajo existan y la pagina se queda a medias. */
   var recordada = false;
@@ -93,12 +88,19 @@
     b.addEventListener('animationend', function () { b.remove(); });
   }
 
+  /* El celu sufre con tantos nodos animados: menos corazones y mas espaciados. */
+  var esCelular = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  var pocosNucleos = navigator.hardwareConcurrency ? navigator.hardwareConcurrency <= 4 : esCelular;
+  var topeLluvia = esCelular ? 9 : 22;
+  var cadaLluvia = esCelular ? 1100 : 620;
+  var estallidoInicial = pocosNucleos ? 12 : 34;
+
   function iniciarLluviaDeCorazones() {
     if (prefiereCalma) return;
     window.setInterval(function () {
       if (document.hidden) return;
-      if ($('lluvia').children.length < 22) nuevoCorazon();
-    }, 620);
+      if ($('lluvia').children.length < topeLluvia) nuevoCorazon();
+    }, cadaLluvia);
   }
 
   function estallarCorazones(cantidad) {
